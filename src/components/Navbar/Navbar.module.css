@@ -1,0 +1,51 @@
+.header {
+  background: #fff;
+  border-bottom: 1px solid var(--veloop-border);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.inner {
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--veloop-bg-deep);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.rewards { color: var(--veloop-gold); font-weight: 600; }
+
+.nav {
+  display: flex;
+  gap: 26px;
+}
+.nav a {
+  color: var(--veloop-muted);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+.nav a:hover { color: var(--veloop-bg-deep); }
+
+.walletChip {
+  background: var(--veloop-bg);
+  border: 1px solid var(--veloop-border);
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--veloop-bg-deep);
+}
+
+@media (max-width: 700px) {
+  .nav { display: none; }
+}

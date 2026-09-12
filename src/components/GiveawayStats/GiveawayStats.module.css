@@ -1,0 +1,55 @@
+.section { padding-top: 40px; padding-bottom: 20px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: -70px;
+  position: relative;
+  z-index: 2;
+}
+
+.card {
+  background: var(--veloop-card);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  padding: 22px 18px;
+  text-align: center;
+}
+
+.iconWrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: rgba(231, 183, 80, 0.16);
+  color: #a97a12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  font-size: 18px;
+}
+
+.value {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: var(--font-heading);
+  color: var(--veloop-bg-deep);
+}
+
+.label {
+  font-size: 13px;
+  color: var(--veloop-success);
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.sub {
+  font-size: 12px;
+  color: var(--veloop-muted);
+  margin-top: 4px;
+}
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: repeat(2, 1fr); margin-top: -50px; }
+}

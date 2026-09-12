@@ -1,0 +1,28 @@
+.card {
+  background: var(--veloop-card);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: 18px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.badge {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 12px;
+  background: rgba(231,183,80,0.16);
+  color: #a97a12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.giveawayName { font-weight: 700; color: var(--veloop-bg-deep); margin-bottom: 6px; font-size: 14.5px; }
+.row { font-size: 13px; color: var(--veloop-muted); display: flex; gap: 6px; }
+.label { font-weight: 600; }
+.value { color: var(--veloop-text); }
+.dateRow { margin-top: 6px; font-size: 12px; color: var(--veloop-muted); display: flex; align-items: center; gap: 5px; }

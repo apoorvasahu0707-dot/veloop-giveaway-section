@@ -1,0 +1,33 @@
+.header {
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.title {
+  font-size: 30px;
+  color: var(--veloop-bg-deep);
+}
+
+.subtitle {
+  color: var(--veloop-muted);
+  font-size: 14.5px;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+@media (max-width: 980px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 620px) {
+  .grid { grid-template-columns: 1fr; }
+}

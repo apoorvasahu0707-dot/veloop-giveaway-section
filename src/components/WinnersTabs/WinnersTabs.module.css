@@ -1,0 +1,54 @@
+.header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.title { font-size: 28px; color: var(--veloop-bg-deep); }
+
+.tabBar {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+
+.tab {
+  border: 1px solid var(--veloop-border);
+  background: var(--veloop-card);
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 13.5px;
+  cursor: pointer;
+  color: var(--veloop-muted);
+  transition: all 0.15s ease;
+}
+
+.active {
+  background: var(--veloop-bg-deep);
+  color: #fff;
+  border-color: var(--veloop-bg-deep);
+}
+
+.currentPanel { display: flex; justify-content: center; }
+
+.endedNote {
+  text-align: center;
+  color: var(--veloop-muted);
+  font-size: 14px;
+}
+
+.prevGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  .prevGrid { grid-template-columns: 1fr; }
+}
