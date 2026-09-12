@@ -7,18 +7,21 @@
   --veloop-violet: #6D28D9;
   --veloop-gold: #F0A93A;
   --veloop-gold-light: #FFD27A;
-  --veloop-bg: #F7F5FB;
-  --veloop-card: #FFFFFF;
-  --veloop-text: #1B1330;
-  --veloop-muted: #7A7390;
-  --veloop-border: #E8E3F3;
-  --veloop-danger: #E4577A;
-  --veloop-success: #21C08A;
+
+  --veloop-bg: #0A0714;
+  --veloop-card: #150F28;
+  --veloop-card-2: #1B1433;
+  --veloop-text: #F3F0FA;
+  --veloop-muted: #A79CC4;
+  --veloop-border: #2A2148;
+  --veloop-danger: #FF6B8B;
+  --veloop-success: #34D399;
+
   --radius-lg: 22px;
   --radius-md: 16px;
   --radius-sm: 11px;
-  --shadow-soft: 0 14px 36px rgba(78, 20, 140, 0.14);
-  --shadow-card: 0 6px 20px rgba(78, 20, 140, 0.08);
+  --shadow-soft: 0 14px 36px rgba(0, 0, 0, 0.45);
+  --shadow-card: 0 6px 20px rgba(0, 0, 0, 0.35);
   --font-heading: "Poppins", "Segoe UI", sans-serif;
   --font-body: "Inter", "Segoe UI", sans-serif;
 }
@@ -56,8 +59,8 @@ h1, h2, h3, h4 {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(139, 63, 232, 0.12);
-  color: #7A2FD1;
+  background: rgba(139, 63, 232, 0.18);
+  color: var(--veloop-purple-light);
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 0.04em;

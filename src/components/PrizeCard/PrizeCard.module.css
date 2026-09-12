@@ -42,6 +42,19 @@
   border-radius: 999px;
 }
 
+.voucherBadge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: linear-gradient(135deg, var(--veloop-gold), #d9a63c);
+  color: #23180a;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 5px 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+}
+
 .body {
   padding: 16px 18px 18px;
   display: flex;
@@ -52,7 +65,7 @@
 
 .name {
   font-size: 18px;
-  color: var(--veloop-bg-deep);
+  color: var(--veloop-text);
 }
 
 .desc {
@@ -81,7 +94,7 @@
 }
 
 .feeBox {
-  background: var(--veloop-bg);
+  background: var(--veloop-bg-panel);
   border-radius: var(--radius-sm);
   padding: 10px 12px;
   margin-top: 4px;
@@ -96,7 +109,7 @@
 
 .feeAmount {
   font-weight: 700;
-  color: var(--veloop-bg-deep);
+  color: var(--veloop-text);
 }
 
 .balanceNote {

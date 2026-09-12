@@ -21,7 +21,7 @@
   margin: 0 auto 14px;
 }
 
-.title { color: var(--veloop-bg-deep); font-size: 17px; margin-bottom: 6px; }
+.title { color: var(--veloop-text); font-size: 17px; margin-bottom: 6px; }
 
 .status {
   display: inline-block;

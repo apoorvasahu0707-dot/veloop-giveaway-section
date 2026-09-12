@@ -1,5 +1,5 @@
 .header {
-  background: #fff;
+  background: var(--veloop-bg-panel);
   border-bottom: 1px solid var(--veloop-border);
   position: sticky;
   top: 0;
@@ -17,7 +17,7 @@
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: 18px;
-  color: var(--veloop-bg-deep);
+  color: var(--veloop-text);
   display: flex;
   align-items: center;
   gap: 6px;
@@ -34,16 +34,16 @@
   font-size: 14px;
   font-weight: 600;
 }
-.nav a:hover { color: var(--veloop-bg-deep); }
+.nav a:hover { color: var(--veloop-text); }
 
 .walletChip {
-  background: var(--veloop-bg);
+  background: var(--veloop-card-2);
   border: 1px solid var(--veloop-border);
   padding: 7px 14px;
   border-radius: 999px;
   font-size: 13px;
   font-weight: 700;
-  color: var(--veloop-bg-deep);
+  color: var(--veloop-gold-light);
 }
 
 @media (max-width: 700px) {

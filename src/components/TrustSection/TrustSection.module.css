@@ -7,10 +7,11 @@
 }
 
 .card {
-  background: linear-gradient(160deg, #101f30, #0b1b2b);
+  background: linear-gradient(160deg, var(--veloop-bg-panel-2), var(--veloop-bg-panel));
   color: #fff;
   border-radius: var(--radius-lg);
   padding: 26px 22px;
+  border: 1px solid var(--veloop-border);
 }
 
 .iconWrap {

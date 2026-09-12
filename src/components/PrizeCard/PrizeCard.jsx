@@ -20,6 +20,11 @@ export default function PrizeCard({ giveaway, userBalances, isLoggedIn, hasJoine
   const balance = userBalances[entryFee.currency] ?? 0;
   const hasEnough = balance >= entryFee.amount;
 
+  // The shared gift-card artwork has "₹20" baked into the design, so for
+  // voucher giveaways we overlay the real denomination (parsed from the
+  // giveaway name) on top, to keep each voucher card visually distinct.
+  const voucherAmountMatch = image === "giftcard" ? name.match(/₹[\d,]+/) : null;
+
   let ctaLabel = `Join for ${entryFee.amount} ${entryFee.currency}`;
   let ctaDisabled = false;
   let onClick = onJoin;
@@ -44,6 +49,9 @@ export default function PrizeCard({ giveaway, userBalances, isLoggedIn, hasJoine
       <div className={styles.imageArea}>
         <span className={styles.position}>{position}</span>
         <img className={styles.productImg} src={IMAGES[image]} alt={name} />
+        {voucherAmountMatch && (
+          <span className={styles.voucherBadge}>{voucherAmountMatch[0]}</span>
+        )}
       </div>
 
       <div className={styles.body}>

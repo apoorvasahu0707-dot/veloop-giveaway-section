@@ -21,7 +21,7 @@
   font-size: 18px;
 }
 
-.giveawayName { font-weight: 700; color: var(--veloop-bg-deep); margin-bottom: 6px; font-size: 14.5px; }
+.giveawayName { font-weight: 700; color: var(--veloop-text); margin-bottom: 6px; font-size: 14.5px; }
 .row { font-size: 13px; color: var(--veloop-muted); display: flex; gap: 6px; }
 .label { font-weight: 600; }
 .value { color: var(--veloop-text); }

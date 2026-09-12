@@ -6,7 +6,7 @@
   gap: 10px;
   margin-bottom: 24px;
 }
-.title { font-size: 28px; color: var(--veloop-bg-deep); }
+.title { font-size: 28px; color: var(--veloop-text); }
 
 .tabBar {
   display: flex;
@@ -28,9 +28,9 @@
 }
 
 .active {
-  background: var(--veloop-bg-deep);
+  background: linear-gradient(135deg, var(--veloop-purple), var(--veloop-violet));
   color: #fff;
-  border-color: var(--veloop-bg-deep);
+  border-color: transparent;
 }
 
 .currentPanel { display: flex; justify-content: center; }
