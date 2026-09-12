@@ -188,8 +188,7 @@ gift-card claim modal, and the non-winner (insufficient balance) state.
 
 ## Live Demo
 
-Deploy to Vercel or Netlify and add the live URL here before
-submission.
+https://veloop-giveaway-section.vercel.app/
 
 ---
 Built by Apoorva Sahu — Full Stack Development Intern, VELoop Rewards.
